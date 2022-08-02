@@ -7,25 +7,25 @@ let lab3 = document.getElementById("terceiro-label")
 let i = 1
 
 var perguntas = [
-  "Qual a linguagem de estilo?",
-  "Qual a linguagem de marcação?",
-  "Qual dessas linguagens manipula o DOM?"
+  "Dentro de qual elemento HTML colocamos o JavaScript?",
+  "Onde é o lugar correto para inserir o JavaScript?",
+  "Qual atributo abaixo não pertence a tag <a>?"
 ]
 
 var respostas = [{
-  opcao1:"HTML",
-  opcao2:"CSS",
-  opcao3:"JavaScript"
+  opcao1:"<js>",
+  opcao2:"<javascript>",
+  opcao3:"<script>"
 },
 {
-  opcao1:"CSS",
-  opcao2:"JavaScript",
-  opcao3:"HTML"
+  opcao1:"<head>",
+  opcao2:"<body>",
+  opcao3:"Os dois estão corretos"
 },
 {
-  opcao1:"JavaScript",
-  opcao2:"HTML",
-  opcao3:"CSS"
+  opcao1:"target",
+  opcao2:"src",
+  opcao3:"title"
 }]
 
 campoPergunta.textContent = perguntas[0]
