@@ -27,11 +27,13 @@ function alternativa(){
 }
 }
 
-//if(!btn[0].checked || !btn[1].checked || !btn[2].checked){
-//  res.innerHTML = ""
-//}
-
 function responder(){
+  
+  btn[0].checked = false
+  btn[1].checked = false
+  btn[2].checked = false
+  res.innerHTML=""
+  
   let perg = document.getElementById("pergunta")
   
   let lab1 = document.getElementById("primeiro-label")
