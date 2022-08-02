@@ -103,3 +103,7 @@ function responder(){
     i++
   }
 }
+function finalizar(){
+  let cont = document.getElementById("container")
+  cont.innerHTML = ""
+}
