@@ -83,16 +83,23 @@ function alternativa(){
 }
 
 function responder(){
+  if(i==perguntas.length){
+    campoPergunta.textContent = perguntas[i-1]
+    lab1.innerText = respostas[i-1].opcao1
+    lab2.innerText = respostas[i-1].opcao2
+    lab3.innerText = respostas[i-1].opcao3
+    res.innerHTML= "<button id='btn-enviar' onclick='finalizar()'>Finalizar</button>"
+  }else{
+    btn[0].checked = false
+    btn[1].checked = false
+    btn[2].checked = false
+    res.innerHTML=""
 
-  btn[0].checked = false
-  btn[1].checked = false
-  btn[2].checked = false
-  res.innerHTML=""
+    campoPergunta.textContent = perguntas[i]
 
-  campoPergunta.textContent = perguntas[i]
-
-  lab1.innerText = respostas[i].opcao1
-  lab2.innerText = respostas[i].opcao2
-  lab3.innerText = respostas[i].opcao3
-  i++
+    lab1.innerText = respostas[i].opcao1
+    lab2.innerText = respostas[i].opcao2
+    lab3.innerText = respostas[i].opcao3
+    i++
+  }
 }
