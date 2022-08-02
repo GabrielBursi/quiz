@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:ital,wght@0,100;0,200;0,300;1,200&family=Kantumruy+Pro:wght@200&family=Manrope&family=Montserrat:wght@200;300&family=Mulish:wght@300&family=Noto+Sans&family=Noto+Sans+JP:wght@900&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto&family=Tajawal&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .container {
@@ -21,7 +34,7 @@
     font-size: 14px;
 }
 
-.alternativa-container {
+form{
     display: flex;
     justify-content: space-between;
     align-items: center;
