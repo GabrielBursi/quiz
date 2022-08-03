@@ -25,7 +25,8 @@
 }
 .question-container {
     text-align: center;
-    width: 350px;
+    max-width: 450px;
+    max-height: 100px;
     border-bottom: 1px solid black;
     padding: 8px 0px;
     margin: 4px;
@@ -35,7 +36,8 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
 }
 .input-container {
     padding: 2px;
@@ -49,17 +51,18 @@ form{
 .alternativa-input {
     cursor: pointer;
 }
+.btns-container {
+    max-width: 300px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5px;
+    margin: 5px;
+}
 .btn-container {
-    margin: 7px 0px;
-    padding: 4px 0px;
     width: 100px;
     text-align: center;
-}
-.btns-container{
-    width:300px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
 }
 #btn-enviar {
     background: none;
