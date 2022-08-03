@@ -58,5 +58,5 @@ res.addEventListener("click", function(){
 
 final.addEventListener("click", function(){
   let cont = document.getElementById("container")
-  cont.innerHTML = ""
+  cont.innerHTML = "ACABOU"
 })
