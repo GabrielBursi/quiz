@@ -61,7 +61,6 @@ var respostas = [{
   opcao2:"array",
   opcao3:"undefined"
 }]
-
 export default{
     perguntas:perguntas,
     respostas:respostas

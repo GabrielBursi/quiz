@@ -16,7 +16,6 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Tajawal', sans-serif;
 }
-
 .container {
     height: 100vh;
     display: flex;
@@ -24,7 +23,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .question-container {
     text-align: center;
     width: 350px;
@@ -33,37 +31,43 @@
     margin: 4px;
     font-size: 14px;
 }
-
 form{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 400px;
 }
-
 .input-container {
     padding: 2px;
     margin: 2px;
     font-size: 18px;
     font-weight: light;
 }
-
 .input-container label {
     cursor: pointer;
 }
-
 .alternativa-input {
     cursor: pointer;
 }
-
 .btn-container {
     margin: 7px 0px;
     padding: 4px 0px;
     width: 100px;
     text-align: center;
 }
-
+.btns-container{
+    width:300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
 #btn-enviar {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+#btn-finalizar{
     background: none;
     border: none;
     font-size: 16px;
