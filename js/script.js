@@ -3,6 +3,7 @@ import mod from './modul.js';
 let btn = document.querySelectorAll(".alternativa-input")
 let res = document.querySelector(".btn-container")
 let final = document.querySelector(".btn-finalizar-container")
+let refazer = document.querySelector(".btn-refazer-container")
 let campoPergunta = document.getElementById("pergunta")
 let lab1 = document.getElementById("primeiro-label")
 let lab2 = document.getElementById("segundo-label")
@@ -11,9 +12,11 @@ let i = 1
 
 campoPergunta.textContent = mod.perguntas[0]
 
-lab1.innerText = mod.respostas[0].opcao1
-lab2.innerText = mod.respostas[0].opcao2
-lab3.innerText = mod.respostas[0].opcao3
+  lab1.innerText = mod.respostas[0].opcao1
+  lab2.innerText = mod.respostas[0].opcao2
+  lab3.innerText = mod.respostas[0].opcao3
+
+
 
 btn[0].addEventListener("click", function(){
   if(btn[0].checked || btn[1].checked || btn[2].checked){
@@ -57,6 +60,16 @@ res.addEventListener("click", function(){
 })
 
 final.addEventListener("click", function(){
-  let cont = document.getElementById("container")
-  cont.innerHTML = "ACABOU"
+  final.innerHTML=""
+  refazer.innerHTML = "<button id='btn-refazer'>Refazer Quiz?</button>"
+})
+
+refazer.addEventListener("click", function() {
+  i=1
+  refazer.innerHTML =""
+  campoPergunta.textContent = mod.perguntas[0]
+
+  lab1.innerText = mod.respostas[0].opcao1
+  lab2.innerText = mod.respostas[0].opcao2
+  lab3.innerText = mod.respostas[0].opcao3
 })

@@ -59,12 +59,9 @@ form{
     align-items: center;
     padding:5px;
     margin: 5px;
+    border: 1px solid black;
 }
-.btn-container {
-    width: 100px;
-    text-align: center;
-}
-#btn-enviar {
+button{
     font-size: 14px;
     font-family: Arial;
     width: 120px;
@@ -78,23 +75,6 @@ form{
     text-shadow: inset 0px 1px 0px #1570cd;
     background: linear-gradient(#3d94f6, #1e62d0);
 }
-#btn-enviar:hover{
-    background: linear-gradient(#1e62d0, #3d94f6);
-}
-#btn-finalizar{
-    font-size: 14px;
-    font-family: Arial;
-    width: 120px;
-    height: 30px;
-    border-width: 1px;
-    color: #ffffff;
-    border-color: #337fed;
-    font-weight: bold;
-    border-radius: 6px;
-    box-shadow: inset 0px 1px 0px 0px #97c4fe;
-    text-shadow: inset 0px 1px 0px #1570cd;
-    background: linear-gradient(#3d94f6, #1e62d0);
-}
-#btn-finalizar:hover {
+button:hover{
     background: linear-gradient(#1e62d0, #3d94f6);
 }
