@@ -11,7 +11,7 @@ let lab2 = document.getElementById("segundo-label")
 let lab3 = document.getElementById("terceiro-label")
 let i = 1
 
-campoPergunta.textContent = mod.perguntas[0]
+campoPergunta.textContent = `${i} - ${mod.perguntas[0]}`
 
   lab1.innerText = mod.respostas[0].opcao1
   lab2.innerText = mod.respostas[0].opcao2
@@ -25,12 +25,12 @@ btn[0].addEventListener("click", function(){
   }
   if(lab1.innerText === mod.respostas[5].opcao1){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab1.innerText === mod.respostas[6].opcao1){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
 })
@@ -41,22 +41,22 @@ btn[1].addEventListener("click", function(){
   }
   if(lab2.innerText === mod.respostas[3].opcao2){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[4].opcao2){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[7].opcao2){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[8].opcao2){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
 })
@@ -67,29 +67,29 @@ btn[2].addEventListener("click", function(){
   }
   if(lab3.innerText === mod.respostas[0].opcao3){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[1].opcao3){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[2].opcao3){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[9].opcao3){
     console.log("Certo!")
-    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    mod.respostasCertas.push(i)
     console.log(mod.respostasCertas)
   }
 })
 
 res.addEventListener("click", function(){
   if(i==mod.perguntas.length){
-    campoPergunta.textContent = mod.perguntas[i-1]
+    campoPergunta.textContent = `${i} - ${mod.perguntas[i-1]}`
     lab1.innerText = mod.respostas[i-1].opcao1
     lab2.innerText = mod.respostas[i-1].opcao2
     lab3.innerText = mod.respostas[i-1].opcao3
@@ -101,7 +101,7 @@ res.addEventListener("click", function(){
     btn[2].checked = false
     res.innerHTML=""
 
-    campoPergunta.textContent = mod.perguntas[i]
+    campoPergunta.textContent = `${i+1} - ${mod.perguntas[i]}`
 
     lab1.innerText = mod.respostas[i].opcao1
     lab2.innerText = mod.respostas[i].opcao2
@@ -114,7 +114,8 @@ final.addEventListener("click", function(){
   final.innerHTML=""
   refazer.innerHTML = "<button id='btn-refazer'>Refazer Quiz?</button>"
   let conta = (mod.respostasCertas.length / 100) * mod.perguntas.length
-  acertos.innerHTML=`Voce acertou ${conta}`
+  conta = Number(conta).toFixed(1)
+  acertos.innerText=`Voce acertou ${conta * 100}% das questões!\nAcertou as perguntas: ${mod.respostasCertas}`
 })
 
 refazer.addEventListener("click", function() {
@@ -125,7 +126,7 @@ refazer.addEventListener("click", function() {
   btn[1].checked = false
   btn[2].checked = false
   refazer.innerHTML =""
-  campoPergunta.textContent = mod.perguntas[0]
+  campoPergunta.textContent = `${i} - ${mod.perguntas[0]}`
 
   lab1.innerText = mod.respostas[0].opcao1
   lab2.innerText = mod.respostas[0].opcao2
