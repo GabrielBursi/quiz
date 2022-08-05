@@ -61,7 +61,10 @@ var respostas = [{
   opcao2:"array",
   opcao3:"object" 
 }]
+
+var respostasCertas = [];
 export default{
     perguntas:perguntas,
-    respostas:respostas
+    respostas:respostas,
+    respostasCertas:respostasCertas
 }

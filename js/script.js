@@ -24,9 +24,13 @@ btn[0].addEventListener("click", function(){
   }
   if(lab1.innerText === mod.respostas[5].opcao1){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab1.innerText === mod.respostas[6].opcao1){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
 })
 
@@ -36,15 +40,23 @@ btn[1].addEventListener("click", function(){
   }
   if(lab2.innerText === mod.respostas[3].opcao2){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[4].opcao2){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[7].opcao2){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab2.innerText === mod.respostas[8].opcao2){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
 })
 
@@ -54,15 +66,23 @@ btn[2].addEventListener("click", function(){
   }
   if(lab3.innerText === mod.respostas[0].opcao3){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[1].opcao3){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[2].opcao3){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
   if(lab3.innerText === mod.respostas[9].opcao3){
     console.log("Certo!")
+    mod.respostasCertas.push(mod.respostasCertas.length + 1)
+    console.log(mod.respostasCertas)
   }
 })
 
@@ -96,6 +116,7 @@ final.addEventListener("click", function(){
 
 refazer.addEventListener("click", function() {
   i=1
+  mod.respostasCertas=[]
   btn[0].checked = false
   btn[1].checked = false
   btn[2].checked = false
