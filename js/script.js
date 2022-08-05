@@ -1,7 +1,7 @@
 import mod from './modul.js';
 
 let btn = document.querySelectorAll(".alternativa-input")
-let res = document.querySelector(".btn-container")
+let res = document.querySelector(".btn-responder-container")
 let final = document.querySelector(".btn-finalizar-container")
 let refazer = document.querySelector(".btn-refazer-container")
 let campoPergunta = document.getElementById("pergunta")
@@ -66,6 +66,9 @@ final.addEventListener("click", function(){
 
 refazer.addEventListener("click", function() {
   i=1
+  btn[0].checked = false
+  btn[1].checked = false
+  btn[2].checked = false
   refazer.innerHTML =""
   campoPergunta.textContent = mod.perguntas[0]
 

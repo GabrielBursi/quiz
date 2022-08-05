@@ -52,14 +52,12 @@ form{
     cursor: pointer;
 }
 .btns-container {
-    max-width: 300px;
-    min-width: 300px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding:5px;
     margin: 5px;
-    border: 1px solid black;
 }
 button{
     font-size: 14px;
