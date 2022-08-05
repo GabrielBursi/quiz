@@ -112,6 +112,9 @@ res.addEventListener("click", function(){
 final.addEventListener("click", function(){
   final.innerHTML=""
   refazer.innerHTML = "<button id='btn-refazer'>Refazer Quiz?</button>"
+  let acertos = document.querySelector(".acertos")
+  acertos.innerHTML=`Voce acertou ${mod.respostasCertas.length}/10`
+  console.log(`Voce acertou ${mod.respostasCertas.length}/10`)
 })
 
 refazer.addEventListener("click", function() {
