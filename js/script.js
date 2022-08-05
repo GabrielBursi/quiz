@@ -4,6 +4,7 @@ let btn = document.querySelectorAll(".alternativa-input")
 let res = document.querySelector(".btn-responder-container")
 let final = document.querySelector(".btn-finalizar-container")
 let refazer = document.querySelector(".btn-refazer-container")
+let acertos = document.querySelector(".acertos")
 let campoPergunta = document.getElementById("pergunta")
 let lab1 = document.getElementById("primeiro-label")
 let lab2 = document.getElementById("segundo-label")
@@ -112,14 +113,14 @@ res.addEventListener("click", function(){
 final.addEventListener("click", function(){
   final.innerHTML=""
   refazer.innerHTML = "<button id='btn-refazer'>Refazer Quiz?</button>"
-  let acertos = document.querySelector(".acertos")
-  acertos.innerHTML=`Voce acertou ${mod.respostasCertas.length}/10`
-  console.log(`Voce acertou ${mod.respostasCertas.length}/10`)
+  let conta = (mod.respostasCertas.length / 100) * mod.perguntas.length
+  acertos.innerHTML=`Voce acertou ${conta}`
 })
 
 refazer.addEventListener("click", function() {
   i=1
   mod.respostasCertas=[]
+  acertos.innerHTML = ""
   btn[0].checked = false
   btn[1].checked = false
   btn[2].checked = false
