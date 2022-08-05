@@ -22,17 +22,47 @@ btn[0].addEventListener("click", function(){
   if(btn[0].checked || btn[1].checked || btn[2].checked){
     res.innerHTML = "<button id='btn-enviar'>Responder</button>"
   }
+  if(lab1.innerText === mod.respostas[5].opcao1){
+    console.log("Certo!")
+  }
+  if(lab1.innerText === mod.respostas[6].opcao1){
+    console.log("Certo!")
+  }
 })
 
 btn[1].addEventListener("click", function(){
   if(btn[0].checked || btn[1].checked || btn[2].checked){
     res.innerHTML = "<button id='btn-enviar'>Responder</button>"
   }
+  if(lab2.innerText === mod.respostas[3].opcao2){
+    console.log("Certo!")
+  }
+  if(lab2.innerText === mod.respostas[4].opcao2){
+    console.log("Certo!")
+  }
+  if(lab2.innerText === mod.respostas[7].opcao2){
+    console.log("Certo!")
+  }
+  if(lab2.innerText === mod.respostas[8].opcao2){
+    console.log("Certo!")
+  }
 })
 
 btn[2].addEventListener("click", function(){
   if(btn[0].checked || btn[1].checked || btn[2].checked){
     res.innerHTML = "<button id='btn-enviar'>Responder</button>"
+  }
+  if(lab3.innerText === mod.respostas[0].opcao3){
+    console.log("Certo!")
+  }
+  if(lab3.innerText === mod.respostas[1].opcao3){
+    console.log("Certo!")
+  }
+  if(lab3.innerText === mod.respostas[2].opcao3){
+    console.log("Certo!")
+  }
+  if(lab3.innerText === mod.respostas[9].opcao3){
+    console.log("Certo!")
   }
 })
 

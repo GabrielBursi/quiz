@@ -32,14 +32,14 @@ var respostas = [{
   opcao3:"Creative Style Sheets"
 },
 {
-  opcao1:"<css",
+  opcao1:"<css>",
   opcao2:"<style>",
   opcao3:"<script>"
 },
 {
-  opcao1:"boolean",
+  opcao1:"double", 
   opcao2:"undefined",
-  opcao3:"double"
+  opcao3:"boolean"
 },
 {
   opcao1:"var",
@@ -48,8 +48,8 @@ var respostas = [{
 },
 {
   opcao1:"header",
-  opcao2:"section",
-  opcao3:"blink"
+  opcao2:"blink", 
+  opcao3:"section"
 },
 {
   opcao1:"textcolor",
@@ -57,9 +57,9 @@ var respostas = [{
   opcao3:"fontcolor"
 },
 {
-  opcao1:"object",
+  opcao1:"undefined",
   opcao2:"array",
-  opcao3:"undefined"
+  opcao3:"object" 
 }]
 export default{
     perguntas:perguntas,
